@@ -1,17 +1,16 @@
 import axios from "axios";
 import toast from 'react-hot-toast'; 
 
-const baseUrl = "https://fullstack-todo-new.vercel.app"
+const baseUrl = "http://localhost:5000"
 
 const getAllToDo = (setToDo) => {
     axios
         .get(baseUrl)
         .then(({ data }) => {
-            console.log("data ---->", data);
             setToDo(data) 
         })
 }
- 
+  
 const addToDo = (text,setText,setToDo) => {
     if(text.length===0){
         toast.error("Please enter a task")
