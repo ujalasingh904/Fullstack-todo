@@ -12,7 +12,7 @@ const port = process.env.port || 5000
 app.use(express.json())
 app.use(cors(
     {
-        origin: "https://fullstacktodo-frontend.netlify.app",
+        origin: "https://fullstack-todo-frontend.onrender.com",
         methods: ["GET", "POST", "PUT", "DELETE"],
         credentials: true
     }
