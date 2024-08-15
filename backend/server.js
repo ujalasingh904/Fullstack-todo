@@ -3,6 +3,7 @@ import mongoose from 'mongoose'
 import dotenv from 'dotenv'
 import routes from './routes/todoRoute.js'
 import cors from "cors"
+import cd from "../frontend/"
 dotenv.config()
 
 const app = express()
@@ -11,7 +12,7 @@ const port = process.env.port || 5000
 app.use(express.json())
 app.use(cors(
     {
-        origin: "https://fullstack-todo-frontend.onrender.com",
+        origin: "https://fullstacktodo-frontend.netlify.app",
         methods: ["GET", "POST", "PUT", "DELETE"],
         credentials: true
     }
