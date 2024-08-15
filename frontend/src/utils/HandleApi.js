@@ -1,7 +1,7 @@
 import axios from "axios";
 import toast from 'react-hot-toast'; 
 
-const baseUrl = "https://fullstack-todo-backend-ecru.vercel.app"
+const baseUrl = "http://localhost:5000"
 
 const getAllToDo = (setToDo) => {
     axios

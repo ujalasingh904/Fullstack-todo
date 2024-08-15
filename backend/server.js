@@ -11,7 +11,7 @@ const port = process.env.port || 5000
 app.use(express.json())
 app.use(cors(
     {
-        origin: "https://fullstack-todo-frontend-lovat.vercel.app",
+        origin: "http://localhost:5173",
         credentials: true
     }
 ))
