@@ -1,7 +1,7 @@
 import axios from "axios";
 import toast from 'react-hot-toast'; 
 
-const baseUrl = "https://fullstack-todo-backend-j40h.onrender.com"
+const baseUrl = "https://fullstacktodo-backend.netlify.app"
 
 const getAllToDo = (setToDo) => {
     axios
